@@ -76,6 +76,8 @@ class Firstimg
     }
 
     /**
+     *
+     * @todo make this better
      * @return string
      */
     public function downloadImage()
