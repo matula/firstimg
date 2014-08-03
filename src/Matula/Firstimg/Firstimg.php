@@ -82,8 +82,7 @@ class Firstimg
     {
         $this->findImage();
         $this->setFolder();
-        $img = Image::make($this->image_uri)->fit(100);
-        $this->setFolder();
+        $img       = Image::make($this->image_uri)->fit(100);
         $extention = 'jpg';
         $filename  = $this->folder . '/' . 'image_' . md5(microtime()) . '.' . $extention;
         $img->save($filename, 60);
